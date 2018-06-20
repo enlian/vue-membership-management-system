@@ -1,18 +1,30 @@
 <template>
-  <div>
-    <router-link to="/">/home</router-link>&emsp;
-    <router-link to="/page1">/page1</router-link>&emsp;
-    <router-link to="/page1/hello">/page1/hello</router-link>&emsp;
-    <router-link to="/whatever">404</router-link>
-    <hr>
+  <div class="header">
+    <el-button type="text" class="logout-btn">退出</el-button>
+    <span>吴淞</span>
   </div>
 </template>
 
 <script>
-  export default {
-  }
+  export default {}
 </script>
 
 
-<style scoped>
+<style lang="less" scoped>
+  .header {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #efefef;
+    padding: 0 15px 0 15px;
+    span{
+      float: right;
+      font-size: 14px;
+      margin-right: 10px;
+      color: #666;
+    }
+  }
+
+  .logout-btn {
+    float: right;
+  }
 </style>
