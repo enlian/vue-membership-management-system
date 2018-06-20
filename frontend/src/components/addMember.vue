@@ -81,7 +81,8 @@
                 id_num: '',
                 member_num: '',
                 address: '',
-                money: '0'
+                money: '0',
+                create_time: new Date().getTime()
               }
             }
           } else {

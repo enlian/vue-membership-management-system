@@ -13,6 +13,7 @@
           <el-col :span="5" :offset="7">
             <el-input
               v-model="searchValue"
+              :clearable="true"
               placeholder="根据会员号搜索"
               suffix-icon="el-icon-search">
             </el-input>
@@ -97,11 +98,11 @@
   import _ from 'lodash';
 
   export default {
-    components: {addMember, editMember,vHeader},
+    components: {addMember, editMember, vHeader},
     data() {
       return {
         searchValue: '',
-        editRowValue:{
+        editRowValue: {
           name: '',
           id_num: '',
           member_num: '',
@@ -114,10 +115,18 @@
           member_num: '1234',
           id_num: '123456789111111111',
           money: '500',
-          create_time: '2016-05-03',
+          create_time: '2018-03-03',
           name: '王小虎',
           address: '上海市普陀区金沙江路 1518 弄'
-        }],
+        },
+          {
+            member_num: '5678',
+            id_num: '7777777777777777777',
+            money: '500',
+            create_time: '2018-05-03',
+            name: '呵呵呵',
+            address: '珠海市香洲区吉大'
+          }],
         backupData: null
       }
     },
@@ -154,7 +163,7 @@
               return n.member_num === member_num;
             });
 
-            this.$set(this.tableData, newData);
+            this.tableData = _.cloneDeep(newData)
           })
           .catch(() => {
           });
@@ -175,7 +184,7 @@
           newData[index] = data;
         }
 
-        this.$set(this.tableData, newData);
+        this.tableData = _.cloneDeep(newData)
       },
       closeAddDialog() {
         this.addDialogVisible = false;
