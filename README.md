@@ -9,6 +9,12 @@ Membership Management System
 - 删除会员
 - 编辑会员
 
+会员列表页：http://localhost:8080/#/member
+，可以对会员进行修改删除增加
+
+登录页：http://localhost:8080/#/login
+
+
 ### 使用方法 Build Setup
 
 ``` bash

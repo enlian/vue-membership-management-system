@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import login from '@/components/login'
-import index from '@/components/index'
-import member from '@/components/member'
+import login from '../components/login'
+import index from '../components/index'
+import member from '../components/member'
 
 Vue.use(Router)
 
@@ -35,7 +35,7 @@ export default new Router({
     {
       path: '/page1',
       name: 'page1',
-      component: require('@/components/page1/index'),
+      component: require('../components/page1/index'),
       meta: {
         pageTitle: 'page1'
       },
@@ -43,7 +43,7 @@ export default new Router({
         path: 'hello',
         name: 'page1/hello',
         component (resolve) {
-          require(['@/components/page1/hello'], resolve)
+          require(['../components/page1/hello'], resolve)
         },
         meta: {
           pageTitle: 'page1/hello'
@@ -53,7 +53,7 @@ export default new Router({
     {
       path: '*',
       name: 'page404',
-      component: require('@/components/404/'),
+      component: require('../components/404'),
       meta: {
         pageTitle: '404'
       }
