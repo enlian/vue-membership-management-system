@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <el-button type="text" class="logout-btn">退出</el-button>
-    <span>吴淞</span>
+    <span>UserName</span>
   </div>
 </template>
 
