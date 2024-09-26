@@ -8,9 +8,10 @@ Membership Management System
 - 增加会员
 - 删除会员
 - 编辑会员
+- 根据会员号搜索会员
 
 会员列表页：http://localhost:8080/#/member
-，可以对会员进行修改删除增加
+可以对会员进行增加、删除、修改，还可以根据会员号进行搜索
 
 登录页：http://localhost:8080/#/login
 
