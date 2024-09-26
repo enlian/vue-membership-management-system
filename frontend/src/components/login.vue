@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header>
-      <h3 class="welcome">风采会员管理系统</h3>
+      <h3 class="welcome">会员管理系统</h3>
     </el-header>
     <el-main>
       <el-form :model="ruleForm" :rules="rules" ref="ruleForm">

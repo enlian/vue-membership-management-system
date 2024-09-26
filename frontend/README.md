@@ -1,8 +1,15 @@
-# frontend
+# 会员、员工管理系统
+Membership Management System
 
-> A Vue.js project
+适合企业或店铺管理会员、员工使用
 
-## Build Setup
+### 功能
+- 注册登录
+- 增加会员
+- 删除会员
+- 编辑会员
+
+### 使用方法 Build Setup
 
 ``` bash
 # install dependencies
@@ -17,5 +24,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
